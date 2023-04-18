@@ -1,0 +1,55 @@
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\bin\Debug\net6.0\appsettings.json
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\bin\Debug\net6.0\libman.json
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\bin\Debug\net6.0\the sale of sports goods for basketball.staticwebassets.runtime.json
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\bin\Debug\net6.0\the sale of sports goods for basketball.exe
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\bin\Debug\net6.0\the sale of sports goods for basketball.deps.json
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\bin\Debug\net6.0\the sale of sports goods for basketball.runtimeconfig.json
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\bin\Debug\net6.0\the sale of sports goods for basketball.dll
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\bin\Debug\net6.0\the sale of sports goods for basketball.pdb
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\bin\Debug\net6.0\Mono.TextTemplating.dll
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\bin\Debug\net6.0\Npgsql.dll
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\bin\Debug\net6.0\System.CodeDom.dll
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\obj\Debug\net6.0\the sale of sports goods for basketball.csproj.AssemblyReference.cache
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\obj\Debug\net6.0\the sale of sports goods for basketball.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\obj\Debug\net6.0\the sale of sports goods for basketball.AssemblyInfoInputs.cache
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\obj\Debug\net6.0\the sale of sports goods for basketball.AssemblyInfo.cs
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\obj\Debug\net6.0\the sale of sports goods for basketball.csproj.CoreCompileInputs.cache
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\obj\Debug\net6.0\the sale of sports goods for basketball.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\obj\Debug\net6.0\the sale of sports goods for basketball.RazorAssemblyInfo.cache
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\obj\Debug\net6.0\the sale of sports goods for basketball.RazorAssemblyInfo.cs
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\obj\Debug\net6.0\staticwebassets\msbuild.the sale of sports goods for basketball.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\obj\Debug\net6.0\staticwebassets\msbuild.build.the sale of sports goods for basketball.props
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.the sale of sports goods for basketball.props
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.the sale of sports goods for basketball.props
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\obj\Debug\net6.0\scopedcss\bundle\the sale of sports goods for basketball.styles.css
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\obj\Debug\net6.0\scopedcss\projectbundle\the sale of sports goods for basketball.bundle.scp.css
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\obj\Debug\net6.0\the sale of sports goods for basketball.csproj.CopyComplete
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\obj\Debug\net6.0\the sale of sports goods for basketball.dll
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\obj\Debug\net6.0\refint\the sale of sports goods for basketball.dll
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\obj\Debug\net6.0\the sale of sports goods for basketball.pdb
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\obj\Debug\net6.0\the sale of sports goods for basketball.genruntimeconfig.cache
+C:\Users\Мирослав\Desktop\Учеба\Дипломная работа\Diplom\the sale of sports goods for basketball\obj\Debug\net6.0\ref\the sale of sports goods for basketball.dll
