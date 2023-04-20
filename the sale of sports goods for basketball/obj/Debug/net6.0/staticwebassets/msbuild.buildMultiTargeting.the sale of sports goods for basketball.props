@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\the sale of sports goods for basketball.props" />
+</Project>
