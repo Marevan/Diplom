@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using the_sale_of_sports_goods_for_basketball.Models;
+using the_sale_of_sports_goods_for_basketball.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 

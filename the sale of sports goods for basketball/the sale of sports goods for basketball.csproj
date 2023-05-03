@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\html\" />
+    <Folder Include="Migrations\" />
   </ItemGroup>
 
 </Project>
