@@ -31,7 +31,7 @@
         <div class="row">
             <div class="col-md-6 mx-auto d-flex flex-column justify-content-center border border-primary p-5">
                 <h4 class="mt-0 text-center">Реєстрація</h4>
-                <form method="post" action="@Url.Action("Index", "Home")">
+                <form method="post" asp-validation-summary="All" action="@Url.Action("Index", "Home")">
                     <div class="form-group mt-4">
                         <label asp-for="FirstName" style="color: black;">Ім'я</label>
                         <input asp-for="FirstName" class="form-control" placeholder="Введіть ваше ім'я" required>
@@ -54,7 +54,6 @@
                     </div>
                     <div class="form-group text-center mt-4">
                         <button type="submit" class="btn btn-primary mx-auto">Зареєструватися</button>
-                        @*<a href="@Url.Action("Index", "Home")" class="btn btn-primary mx-auto">Зареєструватися</a>*@
                     </div>
                 </form>
             </div>

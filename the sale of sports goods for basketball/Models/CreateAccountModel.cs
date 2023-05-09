@@ -18,7 +18,7 @@ namespace the_sale_of_sports_goods_for_basketball.Models
 
         [Required(ErrorMessage = "Введіть пароль")]
         [DataType(DataType.Password)]
-        [StringLength(100, MinimumLength = 6, ErrorMessage = "Довжина пароля повинна бути від 6 символів")]
+        [StringLength(15, MinimumLength = 6, ErrorMessage = "Довжина пароля повинна бути від 6 символів")]
         public string Password { get; set; }
     }
 }
