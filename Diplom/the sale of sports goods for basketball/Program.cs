@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using the_sale_of_sports_goods_for_basketball.Models;
+using Microsoft.AspNetCore.Authorization;
+using the_sale_of_sports_goods_for_basketball.Data;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,7 +9,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<DataContext>(options =>
                 options.UseNpgsql(builder.Configuration.GetConnectionString("PostgreSQLConnection")));
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddAuthentication("Cookies")  // схема аутентификации - с помощью jwt-токенов
+    .AddJwtBearer();
 
 var app = builder.Build();
 
@@ -25,6 +28,11 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options => options.LoginPath = "/Account/Login");
+builder.Services.AddAuthorization();
+
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(
