@@ -9,8 +9,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<DataContext>(options =>
                 options.UseNpgsql(builder.Configuration.GetConnectionString("PostgreSQLConnection")));
 builder.Services.AddControllersWithViews();
-builder.Services.AddAuthentication("Cookies")  // схема аутентификации - с помощью jwt-токенов
-    .AddJwtBearer();
+builder.Services.AddAuthentication("Cookies");  // схема аутентификации - с помощью jwt-токенов
+
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options => options.LoginPath = "/Account/Login");
+builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
@@ -28,9 +31,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-    .AddCookie(options => options.LoginPath = "/Account/Login");
-builder.Services.AddAuthorization();
+
 
 app.UseAuthentication();
 app.UseAuthorization();

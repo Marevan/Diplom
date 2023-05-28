@@ -1,0 +1,69 @@
+﻿@model List<Order>
+@{
+}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <title>Record</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="@Url.Action("Index", "Home")">SalesRecord</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Warehouse", "Nav")">
+                            Склад
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="@Url.Action("Record", "Nav")">
+                            Облік
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+                </ul>
+                <a href="@Url.Action("Client", "Account")" class="btn btn-primary my-2 my-sm-0">Акаунт</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container p-3">
+        <table class="table table-bordered table-hover table-striped">
+            <thead>
+                <tr class="table-primary">
+                    <th scope="col">Назва</th>
+                    <th scope="col">Категорія</th>
+                    <th scope="col">Опис</th>
+                    <th scope="col">Кількість</th>
+                    <th scope="col">Ціна,грн</th>
+                    <th scope="col">Дата замовлення</th>
+                    <th scope="col">Загальна сума</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var obj in Model)
+                {
+                    <tr>
+                        <th scope="row">@obj.Product.Name</th>
+                        <td>@obj.Product.Category</td>
+                        <td>@obj.Product.Description</td>
+                        <td>@obj.Product.Amount</td>
+                        <td>@obj.Product.Price</td>
+                        <td>@obj.OrderDate</td>
+                        <td>@obj.TotalPrice</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,7 +1,4 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
 }
 <head>
     <meta charset="UTF-8">
@@ -14,7 +11,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="@Url.Action("Index", "Home")">PAccount</a>
+            <a class="navbar-brand" href="@Url.Action("Index", "Home")">SalesRecord</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -26,11 +23,11 @@
                 <h4 class="mt-0 text-center">Особистий кабінет</h4>
                 <form method="post">
                     <div class="form-group mt-4">
-                        <label for="firstName" style="color: black;">Имя</label>
+                        <label for="firstName" style="color: black;">Ім'я'</label>
                         <input type="text" class="form-control" id="FirstName" name="firstName" readonly>
                     </div>
                     <div class="form-group mt-4">
-                        <label for="lastName" style="color: black;">Фамилия</label>
+                        <label for="lastName" style="color: black;">Прізвище</label>
                         <input type="text" class="form-control" id="LastName" name="lastName" readonly>
                     </div>
                     <div class="form-group mt-4">

@@ -41,10 +41,8 @@ namespace the_sale_of_sports_goods_for_basketball.Controllers
                     }
                 }
             }
-
             return RedirectToAction("Login", "Account");
         }
-
         public IActionResult Client()
         {
             return View();

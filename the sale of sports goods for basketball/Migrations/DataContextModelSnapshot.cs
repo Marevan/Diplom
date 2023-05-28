@@ -51,32 +51,6 @@ namespace the_sale_of_sports_goods_for_basketball.Migrations
                     b.ToTable("Clients", (string)null);
                 });
 
-            modelBuilder.Entity("the_sale_of_sports_goods_for_basketball.Models.Discount", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime>("EndDate")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<DateTime>("StartDate")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<decimal>("Value")
-                        .HasColumnType("numeric");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Discounts", (string)null);
-                });
-
             modelBuilder.Entity("the_sale_of_sports_goods_for_basketball.Models.Order", b =>
                 {
                     b.Property<int>("Id")
@@ -85,61 +59,25 @@ namespace the_sale_of_sports_goods_for_basketball.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("ClientId")
-                        .HasColumnType("integer");
-
-                    b.Property<int?>("DiscountId")
+                    b.Property<int>("Id_client")
                         .HasColumnType("integer");
 
                     b.Property<DateTime>("OrderDate")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<int?>("ReportId")
+                    b.Property<int>("ProductId")
                         .HasColumnType("integer");
 
-                    b.Property<decimal>("TotalPrice")
-                        .HasColumnType("numeric");
+                    b.Property<double>("TotalPrice")
+                        .HasColumnType("double precision");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ClientId");
-
-                    b.HasIndex("DiscountId");
-
-                    b.HasIndex("ReportId");
+                    b.HasIndex("ProductId");
 
                     b.ToTable("Orders", (string)null);
                 });
 
-            modelBuilder.Entity("the_sale_of_sports_goods_for_basketball.Models.OrderItem", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("OrderId")
-                        .HasColumnType("integer");
-
-                    b.Property<decimal>("Price")
-                        .HasColumnType("numeric");
-
-                    b.Property<int>("ProductId")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("Quantity")
-                        .HasColumnType("integer");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("OrderId");
-
-                    b.HasIndex("ProductId");
-
-                    b.ToTable("OrderItem");
-                });
-
             modelBuilder.Entity("the_sale_of_sports_goods_for_basketball.Models.Product", b =>
                 {
                     b.Property<int>("Id")
@@ -148,181 +86,32 @@ namespace the_sale_of_sports_goods_for_basketball.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("CategoryId")
+                    b.Property<int>("Amount")
                         .HasColumnType("integer");
+
+                    b.Property<string>("Category")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<decimal>("Price")
-                        .HasColumnType("numeric");
-
-                    b.Property<int>("QuantityInStock")
-                        .HasColumnType("integer");
-
-                    b.Property<int?>("WarehouseId")
-                        .HasColumnType("integer");
+                    b.Property<double>("Price")
+                        .HasColumnType("double precision");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("CategoryId");
-
-                    b.HasIndex("WarehouseId");
 
                     b.ToTable("Products", (string)null);
                 });
 
-            modelBuilder.Entity("the_sale_of_sports_goods_for_basketball.Models.ProductCategory", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Categories", (string)null);
-                });
-
-            modelBuilder.Entity("the_sale_of_sports_goods_for_basketball.Models.Report", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<DateTime>("EndDate")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<DateTime>("StartDate")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Reports", (string)null);
-                });
-
-            modelBuilder.Entity("the_sale_of_sports_goods_for_basketball.Models.SalesHistory", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<decimal>("Price")
-                        .HasColumnType("numeric");
-
-                    b.Property<int>("ProductId")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("Quantity")
-                        .HasColumnType("integer");
-
-                    b.Property<DateTime>("SaleDate")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ProductId");
-
-                    b.ToTable("SalesHistories", (string)null);
-                });
-
-            modelBuilder.Entity("the_sale_of_sports_goods_for_basketball.Models.Warehouse", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Address")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Warehouses", (string)null);
-                });
-
             modelBuilder.Entity("the_sale_of_sports_goods_for_basketball.Models.Order", b =>
-                {
-                    b.HasOne("the_sale_of_sports_goods_for_basketball.Models.Client", "Client")
-                        .WithMany("Orders")
-                        .HasForeignKey("ClientId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("the_sale_of_sports_goods_for_basketball.Models.Discount", null)
-                        .WithMany("Orders")
-                        .HasForeignKey("DiscountId");
-
-                    b.HasOne("the_sale_of_sports_goods_for_basketball.Models.Report", null)
-                        .WithMany("Orders")
-                        .HasForeignKey("ReportId");
-
-                    b.Navigation("Client");
-                });
-
-            modelBuilder.Entity("the_sale_of_sports_goods_for_basketball.Models.OrderItem", b =>
-                {
-                    b.HasOne("the_sale_of_sports_goods_for_basketball.Models.Order", "Order")
-                        .WithMany("OrderItems")
-                        .HasForeignKey("OrderId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("the_sale_of_sports_goods_for_basketball.Models.Product", "Product")
-                        .WithMany()
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Order");
-
-                    b.Navigation("Product");
-                });
-
-            modelBuilder.Entity("the_sale_of_sports_goods_for_basketball.Models.Product", b =>
-                {
-                    b.HasOne("the_sale_of_sports_goods_for_basketball.Models.ProductCategory", "Category")
-                        .WithMany("Products")
-                        .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("the_sale_of_sports_goods_for_basketball.Models.Warehouse", null)
-                        .WithMany("Products")
-                        .HasForeignKey("WarehouseId");
-
-                    b.Navigation("Category");
-                });
-
-            modelBuilder.Entity("the_sale_of_sports_goods_for_basketball.Models.SalesHistory", b =>
                 {
                     b.HasOne("the_sale_of_sports_goods_for_basketball.Models.Product", "Product")
                         .WithMany()
@@ -331,36 +120,6 @@ namespace the_sale_of_sports_goods_for_basketball.Migrations
                         .IsRequired();
 
                     b.Navigation("Product");
-                });
-
-            modelBuilder.Entity("the_sale_of_sports_goods_for_basketball.Models.Client", b =>
-                {
-                    b.Navigation("Orders");
-                });
-
-            modelBuilder.Entity("the_sale_of_sports_goods_for_basketball.Models.Discount", b =>
-                {
-                    b.Navigation("Orders");
-                });
-
-            modelBuilder.Entity("the_sale_of_sports_goods_for_basketball.Models.Order", b =>
-                {
-                    b.Navigation("OrderItems");
-                });
-
-            modelBuilder.Entity("the_sale_of_sports_goods_for_basketball.Models.ProductCategory", b =>
-                {
-                    b.Navigation("Products");
-                });
-
-            modelBuilder.Entity("the_sale_of_sports_goods_for_basketball.Models.Report", b =>
-                {
-                    b.Navigation("Orders");
-                });
-
-            modelBuilder.Entity("the_sale_of_sports_goods_for_basketball.Models.Warehouse", b =>
-                {
-                    b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
         }

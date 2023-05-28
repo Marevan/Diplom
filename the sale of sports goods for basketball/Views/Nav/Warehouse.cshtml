@@ -1,5 +1,5 @@
-﻿@{
-    ViewData["Title"] = "Склад";
+﻿@model List<Product>
+@{
 }
 
 <html lang="en">
@@ -9,12 +9,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <script src="../js/bootstrap.bundle.min.js"></script>
-    <title>Main Page</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Warehouse</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="@Url.Action("Index", "Home")">PAccount</a>
+            <a class="navbar-brand" href="@Url.Action("Index", "Home")">SalesRecord</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -27,36 +28,46 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="@Url.Action("Report", "Nav")">Учет</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="@Url.Action("Record", "Nav")">Облік</a>
                     </li>
                 </ul>
-                <a href="@Url.Action("Client", "Account")" class="btn btn-secondary my-2 my-sm-0">Аккаунт</a>
+                <a href="@Url.Action("ClientCabinet", "Account")" class="btn btn-primary my-2 my-sm-0">Акаунт</a>
             </div>
         </div>
     </nav>
-    <table class="table table-hover">
-        <thead>
-            <tr>
-                <th scope="col">Назва</th>
-                <th scope="col">Категорія</th>
-                <th scope="col">Ціна</th>
-                <th scope="col">Кількість</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="row">Кроссовки</th>
-                <td>Обувь</td>
-                <td>4300грн.</td>
-                <td>200</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="container p-3">
+        <table class="table table-bordered table-hover table-striped">
+            <thead>
+                <tr class="table-primary">
+                    <th scope="col">Назва</th>
+                    <th scope="col">Категорія</th>
+                    <th scope="col">Опис</th>
+                    <th scope="col">Кількість</th>
+                    <th scope="col">Ціна,грн</th>
+                    <th scope="col">Керування</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var obj in Model)
+                {
+                    <tr>
+                        <th scope="row">@obj.Name</th>
+                        <td>@obj.Category</td>
+                        <td>@obj.Description</td>
+                        <td>@obj.Amount</td>
+                        <td>@obj.Price</td>
+                        <td>
+                            <div>
+                                <a href="@Url.Content("~/Nav/Sale?id=" + obj.Id)" class="btn btn-second">Продати</a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <div>
+            <a href="@Url.Action("Upsert", "Nav")" class="btn btn-primary mx-auto">Замовити</a>
+        </div>
+    </div>
 </body>
 </html>

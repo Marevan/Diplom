@@ -1,6 +1,5 @@
 ﻿@model CreateAccountModel
 @{
-    
 }
 <html lang="en">
 <head>
@@ -14,20 +13,14 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="@Url.Action("Register", "Home")">PAccount</a>
+            <a class="navbar-brand" href="@Url.Action("Register", "Home")">SalesRecord</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a href="@Url.Action("Login", "Account")" class="btn btn-primary">Увійти</a>
         </div>
     </nav>
-    <div class="container">
-        <h1 class="text-center mt-4">ЛАСКАВО ПРОСИМО В ДОДАТОК З ОБЛІКУ ПРОДАЖІВ СПОРТИВНИХ ТОВАРІВ ДЛЯ БАСКЕТБОЛУ!</h1>
-        <p class="text-center mt-4">
-            Наш додаток розроблено спеціально для спортивних магазинів, які спеціалізуються на продажу товарів для баскетболу. Ми знаємо, як важливо мати ефективний інструмент для обліку продажів і управління запасами, щоб ваш бізнес міг розвиватися і рости.</p>
-        <p class="text-center mt-4">Додаток дає змогу зручно та легко відстежувати продажі товарів для баскетболу, проводити аналіз продажів і керувати запасами. Ви можете створювати замовлення для ваших клієнтів, відстежувати їх виконання, контролювати залишки товарів на складі та дивитися звіти з продажу.</p>
-    </div>
-    <div class="container">
+    <div class="container my-5">
         <div class="row">
             <div class="col-md-6 mx-auto d-flex flex-column justify-content-center border border-primary p-5">
                 <h4 class="mt-0 text-center">Реєстрація</h4>
@@ -38,7 +31,7 @@
                         <span class="text-danger"></span>
                     </div>
                     <div class="form-group mt-4">
-                        <label asp-for="LastName" style="color: black;">Фамілія</label>
+                        <label asp-for="LastName" style="color: black;">Прізвище</label>
                         <input asp-for="LastName" class="form-control" placeholder="Введіть ваше прізвище" required>
                         <span  class="text-danger"></span>
                     </div>
